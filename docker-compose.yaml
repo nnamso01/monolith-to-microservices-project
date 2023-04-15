@@ -36,7 +36,5 @@ services:
       URL: "http://localhost:8100"
   frontend:
     image: udagram-frontend:local
-    environment:
-      SERVER_URL: $SERVER_URL
     ports:
       - "8100:80"
