@@ -6,7 +6,7 @@ data:
   AWS_REGION: us-east-1
   JWT_SECRET: testing
   POSTGRES_DB: postgres
-  POSTGRES_HOST: udagram.cnk6jwfdyniz.us-east-1.rds.amazonaws.com
-  SERVER_URL: server_url
+  POSTGRES_HOST: postgres_host
+  URL: url
 metadata:
   name: env-variables
