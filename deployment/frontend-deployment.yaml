@@ -27,11 +27,5 @@ spec:
           limits:
             memory: "1024Mi"
             cpu: "500m"
-        env:
-        - name: SERVER_URL
-          valueFrom:
-            configMapKeyRef:
-              name: env-variables
-              key: SERVER_URL 
       restartPolicy: Always
     
