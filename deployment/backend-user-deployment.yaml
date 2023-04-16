@@ -17,7 +17,14 @@ spec:
       containers:
       - name: backend-user
         image: nedemenang/udagram-api-user
-        imagePullPolicy: Always          
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"          
         env:
         - name: POSTGRES_HOST
           valueFrom:

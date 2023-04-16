@@ -17,7 +17,14 @@ spec:
       containers:
       - name: backend-feed
         image: nedemenang/udagram-api-feed
-        imagePullPolicy: Always          
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"          
         env:
         - name: POSTGRES_HOST
           valueFrom:
